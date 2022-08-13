@@ -147,3 +147,10 @@ body {
     top: 120px;
     left: 70px;
 }
+
+/* Адаптив */
+@media(max-width: 1280px){
+    .container {
+        width: 900px;
+    }
+}
