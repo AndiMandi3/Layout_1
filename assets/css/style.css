@@ -1,6 +1,7 @@
 body {
     margin: 0;
     font-family: "Roboto";
+    overflow-x: hidden;
 
 }
 
@@ -17,7 +18,7 @@ body {
     margin: 0 auto;
 }
 
-.container .frame1 {
+.container, .frame1 {
     margin-right: auto;
     margin-left: auto;
 }
@@ -32,6 +33,9 @@ body {
 
 .pc-header {
     display: flex;
+}
+.mobile {
+    display: none;
 }
 .group_1 {
     width: 270px;
@@ -152,5 +156,115 @@ body {
 @media(max-width: 1280px){
     .container {
         width: 900px;
+    }
+}
+
+@media(max-width: 960px){
+    .frame1 {
+        background-image: url(../img/back_mobile.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        height: 1300px;
+    }
+    .inner2 {
+        background-image: url(../img/blue.svg);
+        background-size: cover;
+        position: relative;
+        bottom: 777px;
+        z-index: -1;
+        background-position: center;
+        height: 789px;
+        width: 100%;
+    }
+
+    .container {
+        width: 100%;
+    }
+
+    .container, .frame1 {
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .mobile {
+        display: block;
+    }
+
+    .mobile-content {
+        background-image: url(../img/c8c8c8.svg);
+        background-size: cover;
+        position: relative;
+        z-index: 1;
+        background-position: center;
+        height: 750px;
+        width: 100%;
+        margin-top: 500px;
+    }
+
+    .header {
+        flex-direction: column;
+        align-items: flex-start;
+        height: 90px;
+        width: 90%;
+        margin: auto;
+    }
+
+    .pc-header, .navigation, .pc-content {
+        display: none;
+    }
+
+    .mobile-header {
+        align-items: flex-start;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        color: white;
+        font-size: 14px;
+        width: 100%;
+    }
+
+    .logo {
+        padding: 0 40px;
+    }
+
+    .school {
+        margin: 0;
+        font-size: 9px;
+    }
+
+    .nadpis {
+        width: 285px;
+        font-size: 36px;
+        font-weight: bolder;
+    }
+
+    .mobile-width {
+        padding-top: 165px;
+        max-width: 285px;
+        margin: 0 auto;
+    }
+    .brus {
+        background: url(../img/blockquote_mobile.png);
+        background-repeat: no-repeat;
+        width: 328px;
+        height: 208px;
+        margin: 45px -20px!important;
+    }
+    .brus cite {
+        bottom: -48px;
+        left: 252px;
+        border: none;
+        background: none;
+    }
+
+    .master {
+        margin-left: -17px;
+    }
+    .pramoug {
+        background-color: #468ADD;
+        width: 100%;
+        height: 10px;
+        margin-top: 25px;
     }
 }

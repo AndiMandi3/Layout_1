@@ -2,7 +2,8 @@
 <html>
     <head>
         <link rel="stylesheet" href="./assets/css/style.css">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <title>Первое задание</title>
     </head>
     <body>
         <div class="frame1"> <!-- Основной фрейм, где у нас все будет происходить -->
@@ -10,7 +11,7 @@
             <div class="container">
                 <!-- При компе мы видим только картинку, надпись, телефон и город. При отображении в мобилке мы видим Философия Навыки Записаться Филиалы -->
                 <!-- Шапка -->
-                <div class="header pc-header mobile-header">
+                <div class="header pc-header">
                     <div class="logo">
                         <img src="./assets/img/logo.svg">
                     </div>
@@ -22,20 +23,54 @@
                         <span class="city">Новосибирск</span>
                     </div>
                 </div>
+                <div class="header mobile">
+                    <div class="mobile-header">
+                        <p>Философия</p>
+                        <p>Навыки</p>
+                        <p>Записаться</p>
+                        <p>Филиалы</p>
+                    </div>
+                    <div class="logo">
+                        <img src="./assets/img/logo.svg">
+                    </div>
+                    <div class="group_1">
+                        <p class="school">Международная школа робототехники и программирования</p>
+                    </div>
+                </div>
                 <!-- Шапка -->
                 <!-- Основной контент -->
                 <div class="content">
-                    <div class="nadpis">
-                        <p>Мастерами робототехники не рождаются – ими становятся!</p>
+                    <!-- Мобильный контент не будет показан на компьютере -->
+                    <div class="mobile mobile-content">
+                        <div class="mobile-width">
+                            <div class="nadpis">
+                                <p>Мастерами робототехники не рождаются – ими становятся!</p>
+                            </div>
+                            <blockquote class="brus">
+                                <p>«Кунг-фу — это философия. Она учит бороться с трудностями, пригибаться, чтобы, распрямившись, стать сильнее, принимать то, что происходит в жизни, и извлекать опыт из ошибок»</p>
+                                <cite>Брюс Ли</cite>
+                            </blockquote>
+                            <div class="knopka">
+                                <button type="submit" class="master">Стать мастером</button>
+                            </div>
+                        </div>
+                        <div class="pramoug"></div>
                     </div>
-                    <div class="knopka">
-                        <button type="submit" class="master">Стать мастером</button>
-                        <div class="blur_behind"></div>
+                    <!-- Мобильный контент закончен-->
+                    <!-- Контент с компа -->
+                    <div class="pc-content">
+                        <div class="nadpis">
+                            <p>Мастерами робототехники не рождаются – ими становятся!</p>
+                        </div>
+                        <div class="knopka">
+                            <button type="submit" class="master">Стать мастером</button>
+                            <div class="blur_behind"></div>
+                        </div>
+                        <blockquote class="brus">
+                            <p>«Кунг-фу — это философия. Она учит бороться с трудностями, пригибаться, чтобы, распрямившись, стать сильнее, принимать то, что происходит в жизни, и извлекать опыт из ошибок»</p>
+                            <cite>Брюс Ли</cite>
+                        </blockquote>
                     </div>
-                    <blockquote class="brus">
-                        <p>«Кунг-фу — это философия. Она учит бороться с трудностями, пригибаться, чтобы, распрямившись, стать сильнее, принимать то, что происходит в жизни, и извлекать опыт из ошибок»</p>
-                        <cite>Брюс Ли</cite>
-                    </blockquote>
                 </div>
             </div>
             <div class="navigation">
